@@ -1,34 +1,39 @@
-import React from 'react';
+import { User, FileText, MessageSquare } from 'lucide-react'
 
-function HowItWorks() {
+export default function HowItWorks() {
+  const steps = [
+    {
+      icon: User,
+      title: 'Select Your Role and Sign Up'
+    },
+    {
+      icon: FileText,
+      title: 'Buyers Post Your Requirements'
+    },
+    {
+      icon: MessageSquare,
+      title: 'Review, Select, and Contact the Best Suppliers'
+    }
+  ]
+
   return (
-    <section className="py-16 bg-white px-4">
-      <h3 className="text-4xl font-bold text-center text-gray-800 mb-12">
-        How it works?
-      </h3>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-        {/* Buyer Section */}
-        <div className="border p-8 rounded-lg shadow-md bg-gray-50">
-          <h4 className="text-2xl font-bold text-blue-700 mb-4">For Buyers</h4>
-          <p className="text-lg text-gray-600">
-            Post your requirements, sit back, and wait for suppliers to contact
-            you. Choose among suppliers based on ratings and reviews to find the
-            best match.
-          </p>
-        </div>
-        {/* Supplier Section */}
-        <div className="border p-8 rounded-lg shadow-md bg-gray-50">
-          <h4 className="text-2xl font-bold text-blue-700 mb-4">
-            For Suppliers
-          </h4>
-          <p className="text-lg text-gray-600">
-            Complete your profile and get notified about new opportunities.
-            Connect with buyers to grow your business.
-          </p>
-        </div>
+    <section className="text-center mb-16">
+      <h2 className="text-3xl font-bold mb-4">How it works?</h2>
+      <p className="text-gray-600 max-w-3xl mx-auto mb-12">
+        Buyers post their needs and review top suppliers, while suppliers complete profiles, connect with 
+        potential buyers, and build successful business relationships, sharing valuable feedback.
+      </p>
+
+      <div className="grid md:grid-cols-3 gap-8">
+        {steps.map((step, index) => (
+          <div key={index} className="text-center space-y-4">
+            <div className="bg-blue-50 w-16 h-16 mx-auto rounded-full flex items-center justify-center">
+              <step.icon className="h-8 w-8 text-blue-900" />
+            </div>
+            <h3 className="font-semibold">{step.title}</h3>
+          </div>
+        ))}
       </div>
     </section>
-  );
+  )
 }
-
-export default HowItWorks;

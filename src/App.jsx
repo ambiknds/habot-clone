@@ -1,20 +1,23 @@
-import React from 'react';
-import Header from './components/Header';
-import HeroSection from './components/HeroSection';
-import HowItWorks from './components/HowItWorks';
-import Locations from './components/Locations';
-import Footer from './components/Footer';
+import Header from './components/Header'
+import HeroSection from './components/HeroSection'
+import ReadySection from './components/ReadySection'
+import VideoSection from './components/VideoSection'
+import SuppliersSection from './components/SuppliersSection'
+import HowItWorks from './components/HowItWorks'
+import Footer from './components/Footer'
 
-function App() {
+export default function App() {
   return (
-    <div className="font-sans text-gray-800">
+    <div className="min-h-screen bg-white">
       <Header />
       <HeroSection />
-      <HowItWorks />
-      <Locations />
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <ReadySection />
+        <VideoSection />
+        <SuppliersSection />
+        <HowItWorks />
+      </main>
       <Footer />
     </div>
-  );
+  )
 }
-
-export default App;

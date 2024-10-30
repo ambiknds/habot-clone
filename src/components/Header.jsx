@@ -1,22 +1,30 @@
-import React from 'react';
+import { Button } from './ui/button'
 
-function Header() {
+export default function Header() {
   return (
-    <header className="bg-gray-100 p-4 shadow-lg sticky top-0 z-50">
-      <nav className="flex justify-between items-center max-w-7xl mx-auto px-4">
-        <h1 className="text-2xl font-bold text-blue-800">HABOT</h1>
-        <ul className="flex space-x-8 text-lg text-gray-600 font-medium">
-          <li className="hover:text-blue-700 cursor-pointer">Find Suppliers</li>
-          <li className="hover:text-blue-700 cursor-pointer">
-            Find Service Tags
-          </li>
-          <li className="hover:text-blue-700 cursor-pointer">
-            Login / Sign Up
-          </li>
-        </ul>
-      </nav>
+    <header className="fixed top-0 w-full bg-white z-50 border-b">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16">
+          <a href="/" className="flex items-center">
+            <img
+              src="/logo-placeholder.png"
+              alt="HABOT"
+              className="h-8 w-auto"
+            />
+          </a>
+          <nav className="hidden md:flex items-center space-x-8">
+            <a href="#" className="text-gray-600 hover:text-gray-900">
+              Find Suppliers
+            </a>
+            <a href="#" className="text-gray-600 hover:text-gray-900">
+              Find Service Tags
+            </a>
+            <Button className="text-emerald-600 bg-emerald-50 border-emerald-200 rounded hover:bg-emerald-100">
+              Login / Sign Up
+            </Button>
+          </nav>
+        </div>
+      </div>
     </header>
-  );
+  )
 }
-
-export default Header;
