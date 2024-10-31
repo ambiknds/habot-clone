@@ -1,3 +1,5 @@
+import { Twitter, Linkedin, Facebook, Instagram } from 'lucide-react';
+
 export default function Footer() {
   return (
     <footer className="bg-blue-900 text-white">
@@ -5,9 +7,9 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           <div>
             <img
-              src="./assets/habot-logo.jpg"
+              src="https://storage.googleapis.com/varal-habot-vault-marketplace-10032022/images/updated%20trans-Habot-logo-png.png"
               alt="HABOT"
-              className="h-8 w-auto mb-4 brightness-0 invert"
+              className="h-16 w-auto mb-4 brightness-0 invert"
             />
             <p className="text-sm text-gray-400">© R Singhania</p>
           </div>
@@ -38,8 +40,11 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div>
-
+        <div className='flex flex-row items-center justify-center gap-4'>
+            <Linkedin />
+            <Twitter />
+            <Facebook />
+            <Instagram />
         </div>
       </div>
     </footer>

@@ -7,9 +7,9 @@ export default function Header() {
         <div className="flex justify-between items-center h-16">
           <a href="/" className="flex items-center">
             <img
-              src="./assets/habot-logo.jpg"
+              src="https://storage.googleapis.com/varal-habot-vault-marketplace-10032022/images/updated%20trans-Habot-logo-png.png"
               alt="HABOT"
-              className="h-8 w-auto"
+              className="h-16 w-auto"
             />
           </a>
           <nav className="hidden md:flex items-center space-x-8">
