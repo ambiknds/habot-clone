@@ -7,7 +7,7 @@ export default function Header() {
         <div className="flex justify-between items-center h-16">
           <a href="/" className="flex items-center">
             <img
-              src="/logo-placeholder.png"
+              src="./assets/habot-logo.jpg"
               alt="HABOT"
               className="h-8 w-auto"
             />
