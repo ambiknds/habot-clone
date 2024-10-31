@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           <div>
             <img
-              src="/logo-placeholder.png"
+              src="./assets/habot-logo.jpg"
               alt="HABOT"
               className="h-8 w-auto mb-4 brightness-0 invert"
             />
