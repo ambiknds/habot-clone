@@ -19,11 +19,11 @@ export default function HeroSection() {
           alt="Dubai Skyline"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-blue-900/70" />
+        <div className="absolute inset-0 bg-gradient-to-b from-cyan-500 via-blue-600 to-indigo-500" />
       </div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center text-white">
         <h1 className="text-4xl font-bold mb-4">Are You a Supplier?</h1>
-        <p className="text-2xl mb-8">Explore Matching Opportunities.</p>
+        <p className="text-5xl mb-8">Explore Matching Opportunities.</p>
         
         <form onSubmit={handleSearch} className="max-w-3xl mx-auto space-y-4">
           <div className="flex gap-2">

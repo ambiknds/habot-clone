@@ -3,7 +3,7 @@ import * as Tabs from '@radix-ui/react-tabs'
 
 export default function VideoSection() {
   return (
-    <div className="bg-blue-900 rounded-lg mb-16">
+    <div className="bg-blue-900 rounded-lg mb-16 max-w-7xl mx-auto">
       <Tabs.Root defaultValue="buyer" className="p-8">
         <Tabs.List className="flex gap-4 mb-8">
           <Tabs.Trigger

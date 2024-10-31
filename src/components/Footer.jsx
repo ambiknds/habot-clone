@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="bg-blue-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-7xl flex justify-between mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
             <img
@@ -37,6 +37,9 @@ export default function Footer() {
               <li><a href="#" className="hover:text-white">Are You a Supplier?</a></li>
             </ul>
           </div>
+        </div>
+        <div>
+
         </div>
       </div>
     </footer>
